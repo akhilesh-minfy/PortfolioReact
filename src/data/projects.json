@@ -1,0 +1,32 @@
+[
+  {
+    "title": "Personal Portfolio Website",
+    "imageSrc": "projects/project.png",
+    "description": "Web & ML Developer | Passion for Innovation and Problem-Solving",
+    "skills": ["HTML","CSS","Animation"],
+    "demo": "https://amaanlucky.github.io/Portfolio/",
+    "source": "https://www.github.com"
+  },
+  {
+    "title": "Stock Price Prediction",
+    "imageSrc": "projects/project.png",
+    "description": "Predicting stock prices using company previous data and ML.",
+    "skills": ["TensorFlow","Stock Market Analysis"],
+    "source": "https://www.example.com"
+  },
+  {
+    "title": "Phishing Website Detection",
+    "imageSrc": "projects/project.png",
+    "description": "This is a project made to learn the latest languages by building an app.",
+    "skills": ["Machine Learning"],
+    "demo": "https://www.example.com"
+  },
+  {
+    "title": "Budget Planner",
+    "imageSrc": "projects/project.png",
+    "description": "A full-stack budget app for tracking expenses, setting limits, and analyzing spending habits.",
+    "skills": ["MERN", "JWT"],
+    "demo": "https://wealthio.onrender.com"
+}
+
+]

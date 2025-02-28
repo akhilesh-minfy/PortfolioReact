@@ -1,0 +1,27 @@
+[
+  {
+    "role": "Web Developer",
+    "organisation": "Codsoft",
+    "startDate": "Nov, 2023",
+    "endDate": "Dec, 2023",
+    "experiences": ["Created dynamic Calculators and Portfolio","Pushed myself to improve technical ability"]
+  },
+  {
+    "role": "Student",
+    "organisation": "SNIST",
+    "startDate": "Mar, 2024",
+    "endDate": "May, 2024",
+    "experiences": [
+        "Configured network devices and implemented security practices.",
+        "Designed and troubleshot IPv4/IPv6 addressing schemes."
+    ]
+},
+{
+  "role": "AI/ML Intern",
+  "organisation": "SNIST",
+  "startDate": "July, 2023",
+  "endDate": "Sept, 2023",
+  "experiences": ["Completed a virtual internship focused on AI and Machine Learning concepts."]
+}
+
+]
