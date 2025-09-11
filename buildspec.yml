@@ -13,7 +13,6 @@ phases:
       - ls -lah ~/.sonarless || echo "Sonarless directory not found"
       - chmod +x ~/.sonarless/makefile.sh || echo "makefile.sh not found or not executable"
       - docker --version || echo "Docker not available — Sonarless will fail"
-      - bash ~/.sonarless/makefile.sh --version || echo "Sonarless version check failed"
 
   pre_build:
     commands:
