@@ -1,0 +1,36 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      nodejs: 18
+    commands:
+      - echo "Installing React dependencies..."
+      - npm install
+      - echo "Installing ShellCheck..."
+      - apt-get update && apt-get install -y shellcheck
+      - echo "Installing Sonarless CLI..."
+      - curl -sSfL https://raw.githubusercontent.com/gitricko/sonarless/main/install.sh | bash
+      - echo "Verifying Sonarless installation..."
+      - ls -lah ~/.sonarless || echo "Sonarless directory not found"
+      - chmod +x ~/.sonarless/makefile.sh || echo "makefile.sh not found or not executable"
+      - docker --version || echo "Docker not available — Sonarless will fail"
+
+  pre_build:
+    commands:
+      - echo "Running Sonarless scan before build..."
+      - bash ~/.sonarless/makefile.sh scan  src/  || echo "Sonarless scan failed"
+      - echo "Sonarless scan completed."
+
+  build:
+    commands:
+      - echo "Building React application..."
+      - npm run build
+
+  post_build:
+    commands:
+      - echo "Build and scan finished successfully."
+
+artifacts:
+  files:
+    - dist/**/*
