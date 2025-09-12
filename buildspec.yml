@@ -17,7 +17,7 @@ phases:
   pre_build:
     commands:
       - echo "Running Sonarless scan before build..."
-      - bash ~/.sonarless/makefile.sh scan  || echo "Sonarless scan failed"
+      - bash ~/.sonarless/makefile.sh scan  src/  || echo "Sonarless scan failed"
       - echo "Sonarless scan completed."
 
   build:
