@@ -6,10 +6,10 @@ phases:
     commands:
       - echo "installing dependencies"
       - npm install 
-   build:
-     commands:
-       - echo "building the application"
-       - npm run build
+  build:
+    commands:
+      - echo "building the application"
+      - npm run build
 artifacts:
   files:
     - dist/**/*
